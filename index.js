@@ -30,16 +30,15 @@ const ListaDeViagens = new Array(
 console.log(ListaDeViagens[1])
 ListaDeViagens.push("Coronel Vivida");
 console.log(ListaDeViagens)
-
 ListaDeViagens.splice(1,1);
 console.log(ListaDeViagens);
 var NomeComprador = entrada("Qual é o seu nome?");
 var IdadeComprador = entrada("Qual é a sua idade?");
-
 if(IdadeComprador < 18){
-  console.log("Infelizmente, você é menor de idade e não podemos lhe vender a passagem")
-}
-
+  console.log(`olá ${NomeComprador} sua idade não corresponde com nossas diretrizes, como sua idade é ${IdadeComprador} não podemos liberar a compra`);
+}1
 if(IdadeComprador >= 18){
-  console.log("Parabéns, sua compra foi realizada com sucesso")
+  console.log(`olá ${NomeComprador}. Qual seria seu destino?`)
 }
+console.log(ListaDeViagens)
+
