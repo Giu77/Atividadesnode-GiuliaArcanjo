@@ -17,6 +17,25 @@ console.log("Olá meu nome é " + NomeCompleto + ", tenho " + Idade + " anos " +
 
 console.log(`oi eu sou ${nomeCompleto}`)
 
+const loginCerto = "Giulia";
+const senhaCerta = 0610;
+console.log(" ");
+console.log("AGENCIAS DE VIAGENS");
+console.log("Faça seu login para continuar");
+
+
+var login = entrada("Digite seu login: ");
+var login = entrada("Digite sua senha: ");
+
+while(login != loginCerto){
+console.log("Login incorreto");
+  login = entrada("Digite seu login novamente: ");
+}
+
+while(senha != senhaCerta){
+  console.log("senha incorreta");
+  senha = entrada("Digite sua senha novamente: ");
+}
 const ListaDeViagens = new Array(
   `França`,
   `Londres`,
